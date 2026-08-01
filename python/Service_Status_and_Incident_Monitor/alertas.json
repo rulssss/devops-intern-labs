@@ -1,0 +1,22 @@
+{
+    "disponibilidad en porcentaje": 60.0,
+    "cantidad de servicios": 5,
+    "servicios con problemas": 3,
+    "incidentes": [
+        {
+            "nombre": "Autenticacion",
+            "estado": "DOWN",
+            "latencia": 0
+        },
+        {
+            "nombre": "Pagos",
+            "estado": "DEGRADED",
+            "latencia": 850
+        },
+        {
+            "nombre": "Notificaciones",
+            "estado": "DOWN",
+            "latencia": 0
+        }
+    ]
+}

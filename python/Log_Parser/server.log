@@ -1,0 +1,6 @@
+2026-07-31 10:00:01 INFO User login: admin
+2026-07-31 10:00:05 ERROR Database connection failed
+2026-07-31 10:01:12 WARN Disk usage above 80%
+2026-07-31 10:02:40 ERROR Timeout waiting for response from API
+2026-07-31 10:03:01 INFO User logout: admin
+2026-07-31 10:04:15 ERROR Out of memory error in process 4021

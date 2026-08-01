@@ -1,0 +1,7 @@
+[
+  {"servicio": "Base de Datos", "estado": "UP", "latencia_ms": 15},
+  {"servicio": "Autenticacion", "estado": "DOWN", "latencia_ms": 0},
+  {"servicio": "Pagos", "estado": "DEGRADED", "latencia_ms": 850},
+  {"servicio": "Frontend Web", "estado": "UP", "latencia_ms": 45},
+  {"servicio": "Notificaciones", "estado": "DOWN", "latencia_ms": 0}
+]
