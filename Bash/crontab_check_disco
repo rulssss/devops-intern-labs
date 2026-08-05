@@ -1,0 +1,16 @@
+#Now let's make Linux execute your check_disco.sh script automatically 
+every minute in the background!
+🎯 Instructions (in English):
+
+    Research how to use the crontab tool in your Linux VM (crontab -e).
+
+    Add a line to your user's crontab so that check_disco.sh runs 
+    automatically every single minute.
+
+    Let it run for 3 or 4 minutes, then inspect your disco.log file 
+    (cat disco.log or tail -f disco.log) 
+    to verify that new lines are being added automatically!
+
+# Script:
+# * *  *   *   *     /home/rulss/check_disco.sh
+

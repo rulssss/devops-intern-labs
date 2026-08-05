@@ -1,0 +1,41 @@
+#The Scenario
+
+#You are managing a Web Server. Crucial background processes (like a web service, database, or API) can sometimes crash unexpectedly. You need an automated script that checks if a specific service is running and attempts to restart it if it goes down.
+#🎯 Requirements
+
+#Write a script named process_monitor.sh that fulfills the following goals:
+
+ #   Target Process: Define a variable for the service name you want to monitor (for testing purposes, you can use cron, ssh, or an Nginx/Apache process).
+
+ #   Process Inspection: Check whether the process is currently running in the system.
+
+ #   Automated Recovery:
+
+ #       If the process is active: Print a green/OK message and append a log entry to process.log.
+
+ #       If the process is NOT running:
+
+  #          Display a critical warning message in the terminal.
+
+  #          Attempt to start or restart the service automatically (using systemctl or service).
+
+   #         Append a failure and recovery log entry to process.log with a timestamp.
+
+
+#!/bin/bash
+
+
+var=$(systemctl is-active cron)
+
+echo $var
+
+if [ "$var" = "active" ]; then
+
+        echo -e "\e[32mOK\e[0m"
+
+else
+
+        echo -e "The process is NOT running\nTry start or restart the service with systemctl >"
+        echo "$(date '+%Y-%m-%d %H:%M:%S') - Cron falló." >> process.log
+
+fi
